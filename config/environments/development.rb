@@ -38,4 +38,9 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # When setting this property to :smtp, also ensure
+  # additional config.action_mailer properties are
+  # set in  ../initializers/setup_mail.rb
+  config.action_mailer.delivery_method = :smtp
 end
